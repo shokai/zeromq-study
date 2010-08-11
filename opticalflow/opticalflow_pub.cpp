@@ -1,6 +1,4 @@
-// オプティカルフロー(ブロックマッチング)
 // http://opencv.jp/sample/optical_flow.html
-
 #include <cv.h>
 #include <highgui.h>
 #include <cxcore.h>
