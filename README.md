@@ -20,3 +20,4 @@ JRuby
 =====
 
     % gem install ffi ffi-libc ffi-rzmq
+    % jruby -J-d64 count/pub.jrb
