@@ -8,6 +8,7 @@ sock= ctx.socket(ZMQ::SUB)
 sock.connect('tcp://127.0.0.1:5000')
 sock.setsockopt(ZMQ::SUBSCRIBE, 'count')
 
+puts 'sub start'
 loop do
   puts sock.recv()
 end

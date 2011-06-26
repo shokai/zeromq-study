@@ -8,7 +8,7 @@ using namespace boost;
 #define MSG_SIZE 128
 
 int main(int argc, char **argv){
-  cout << "pub start" << endl;
+  cout << "sub start" << endl;
   zmq::context_t ctx(1);
   zmq::socket_t sock(ctx, ZMQ_SUB);
   sock.connect("tcp://127.0.0.1:5000");
