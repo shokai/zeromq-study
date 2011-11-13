@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
-## client
+## server
 require 'rubygems'
 require 'zmq'
 
 ctx = ZMQ::Context.new
 sock = ctx.socket(ZMQ::REP)
-sock.connect("tcp://127.0.0.1:5000")
+sock.bind("tcp://127.0.0.1:5000")
 
 loop do
   puts recv = sock.recv

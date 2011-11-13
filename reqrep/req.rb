@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
-## server
+## client
 require 'rubygems'
 require 'zmq'
 
 ctx = ZMQ::Context.new
 sock = ctx.socket(ZMQ::REQ)
-sock.bind("tcp://127.0.0.1:5000")
+sock.connect("tcp://127.0.0.1:5000")
 
 arr = (0...100).to_a
 
